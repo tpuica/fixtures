@@ -28,6 +28,8 @@ public class PrintService {
 
     private static final String EMPTY_STRING = "";
 
+    private static final String DEFAULT_DATE_FORMAT = "EEEE, dd.MM.yyyy";
+
     private static final Logger LOGGER = LoggerFactory.getLogger ( PrintService.class );
 
     @Autowired
@@ -47,7 +49,7 @@ public class PrintService {
             dateFormatter = DateTimeFormatter.ofPattern ( dateFormat );
         } catch ( IllegalArgumentException e ) {
             LOGGER.warn ( "Invalid printing date format pattern provided ({}), using default", dateFormat );
-            dateFormatter = DateTimeFormatter.ofPattern ( "EEEE, dd.MM.yyyy" );
+            dateFormatter = DateTimeFormatter.ofPattern ( DEFAULT_DATE_FORMAT );
         }
     }
 
