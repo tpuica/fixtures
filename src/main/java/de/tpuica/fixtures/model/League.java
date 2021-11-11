@@ -1,5 +1,6 @@
 package de.tpuica.fixtures.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,7 +17,7 @@ public class League {
 
     private String country;
 
-    private List<Team> teams;
+    private List<Team> teams = new ArrayList<> ();
 
     public String getName () {
         return name;

@@ -55,10 +55,17 @@ public class SchedulerService {
     public Schedule createSeasonSchedule ( League league ) {
         Assert.notNull ( league, "League cannot be null" );
 
+        // some league / teams validation
         List<Team> leagueTeams = league.getTeams ();
-        Assert.notEmpty ( leagueTeams, "League must have participating Teams" );
-        Assert.isTrue ( leagueTeams.size () > 1, "There must be at least two participating Teams" );
+        if ( leagueTeams.isEmpty () ) {
+            LOGGER.error ( "League must have participating Teams" );
+            throw new IllegalArgumentException ( "League must have participating Teams" );
+        } else if ( leagueTeams.size () < 2 ) {
+            LOGGER.error ( "There must be at least two participating Teams" );
+            throw new IllegalArgumentException ( "There must be at least two participating Teams" );
+        }
 
+        // season start date / date format validation
         LocalDate startDate = null;
         try {
             startDate = LocalDate.parse ( seasonStart, getDateFormatter () );

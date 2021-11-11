@@ -42,7 +42,7 @@ public class InitializationService {
             LOGGER.error ( "Resource does not exist: {}", leagueResource );
             throw new IllegalStateException ( "Soccer teams json file cannot be found", e );
         } catch ( IOException e ) {
-            LOGGER.error ( "An error occurred while reading soccer teams", e );
+            LOGGER.error ( "An error occurred while reading league teams. Is json file valid?" );
             throw new IllegalStateException ( "Invalid soccer teams json file", e );
         }
     }
