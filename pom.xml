@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.tpuica</groupId>
 	<artifactId>fixtures</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>fixtures</name>
 	<description>fun(ny) assignment</description>
 	<properties>
