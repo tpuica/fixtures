@@ -1,0 +1,27 @@
+{
+  "league": "National first league",
+  "country": "Germany",
+  "teams": [
+    {
+      "name": "Volksbank Kickers",
+      "founding_date": "1998"
+    },
+    {
+      "name": "Arminia Sparkasse",
+      "founding_date": "2000"
+    },
+    {
+      "name": "DJ FC"
+    },
+    {
+      "name": "1. FC Marco"
+    },
+    {
+      "name": "Borussia Helvetia",
+      "founding_date": "2001"
+    },
+    {
+      "name": "SC Graz"
+    }
+  ]
+}

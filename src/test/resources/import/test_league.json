@@ -1,0 +1,30 @@
+{
+  "league": "Test League",
+  "country": "Test Country",
+  "teams": [
+    {
+      "name": "Team A",
+      "founding_date": "1990"
+    },
+    {
+      "name": "Team B",
+      "founding_date": "2000"
+    },
+    {
+      "name": "Team C",
+      "founding_date": "2000"
+    },
+    {
+      "name": "Team D",
+      "founding_date": "1990"
+    },
+    {
+      "name": "Team E",
+      "founding_date": "1980"
+    },
+    {
+      "name": "Team F",
+      "founding_date": "1906"
+    }    
+  ]
+}
